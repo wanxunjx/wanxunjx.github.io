@@ -46,8 +46,6 @@ jks = [
     { title: 'JY解析', url: 'https://jx.we-vip.com/?url=', },
     { title: "⑵号解析接口", url: "https://jqaaa.com/jx.php?url=" },
     { title: "⑸号解析接口", url: "https://www.8090g.cn/jiexi/?url=" },
-    { title: "8090g", url: "https://www.8090g.cn/?url=" },
-    { title: "人人解析", url: "https://vip.mpos.ren/v/?url=" },
-    { title: "百域阁", url: "http://api.baiyug.vip/index.php?url=" },
-    { title: "1717云", url: "http://www.1717yun.com/jx/vip/index.php?url=" },
+    { title: "8090解析", url: "https://www.8090.la/8090/?url=" },
+    { title: "嗨解析", url: "https://jx.jsonplayer.com/player/?url=" },
 ];
