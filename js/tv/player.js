@@ -1,5 +1,4 @@
 jks = [
-    { url: "https://jx.yparse.com/index.php?url=", title: "接口:云析" },
     { title: "qqwtt", url: "https://jx.qqwtt.com/?url=" },
     { title: "剖元", url: "https://www.pouyun.com/?url=" },
     { url: "https://jx.m3u8.tv/jiexi/?url=", title: "⑤号接口" },
@@ -7,11 +6,9 @@ jks = [
     { title: "eptept", url: "https://dmjx.m3u8.tv/?url=" },
     { title: "BL", url: "https://vip.bljiex.com/?v=" },
     { url: "https://www.mtosz.com/m3u8.php?url=", title: "Mao解析" },
-    { title: "夜幕", url: "https://www.yemu.xyz/?url=" },
     { title: "TV解析[腾讯 (芒果)]", url: "https://jx.m3u8.tv/jiexi/?url=" },
     { title: "冰豆", url: "https://api.qianqi.net/vip/?url=" },
 
-    { title: "人人解析", url: "https://vip.mpos.ren/v/?url=" },
     {title: "yparse", "type": "1,2", url: "https://jx.yparse.com/index.php?url="},
     {title: "m1907", "type": "1,2", url: "https://im1907.top/?jx="},
     {title: "qianqi",  url: "https://api.qianqi.net/vip/?url="},
