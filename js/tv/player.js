@@ -12,7 +12,6 @@ jks = [
     { title: "冰豆", url: "https://api.qianqi.net/vip/?url=" },
 
     { title: "人人解析", url: "https://vip.mpos.ren/v/?url=" },
-    { url: "https://vip.wandhi.com/?v=", title: "嗨解析——45-若接口失效可反馈！QQ群:237111082" },
     {title: "yparse", "type": "1,2", url: "https://jx.yparse.com/index.php?url="},
     {title: "m1907", "type": "1,2", url: "https://im1907.top/?jx="},
     {title: "qianqi",  url: "https://api.qianqi.net/vip/?url="},
