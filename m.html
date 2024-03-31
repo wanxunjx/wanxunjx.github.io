@@ -1,0 +1,138 @@
+     
+     <!DOCTYPE html>
+     <html>
+     <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta charset="utf-8">
+     <title>在线随机小姐姐视频 - 核儿</title>
+	 <style>
+        .shuasp {
+            width: 100%;
+        }
+
+        #main {
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #player {
+            width: 100%;
+            height: 300px;
+        }
+
+        #buttons {
+            text-align: center;
+        }
+
+        #buttons button {
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: #5D99FF;
+        }
+
+        .shuasp {
+            max-width: 1200px;
+            padding: 10px 0;
+            margin: 50px auto;
+            box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+        }
+        
+        .shuasp h2{
+            font-size: 25px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .shuaspnr {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .show {
+            display: block;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .kqan {
+            border: none;
+            margin: 10px auto;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: pink;
+            box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #fff;
+        }
+    </style>
+    <div class="shuasp">
+        <div class="shuaspnr">
+        <h2>欢迎观看小姐姐视频</h2>
+            <section id="main">
+                <video id="player" src="https://v1.21lhz.cn/API/Video/api.php" controls preload="none"></video>
+            </section>
+            <section id="buttons">
+                <button id="switch">自动: 开</button>
+                <button id="next">下一位</button>
+            </section>
+            <center>
+                <p style="color:red;"><b>视频体积较大加载需要时间</b></p>
+                <p>天天看美女，强身又健体。</p>
+                <p>美女伴左右，健康又长寿。</p>
+            </center>
+        </div>
+        <center>
+            <button class="kqan" id="watchButton" onclick="toggleDiv()">点击观看小姐姐</button>
+        </center>
+    </div>
+    <script>
+        //点击按钮展开内容再次点击隐藏
+        function toggleDiv() {
+            var div = document.querySelector(".shuaspnr");
+            var button = document.getElementById("watchButton");
+            var video = document.querySelector(".shuaspnr video");
+
+            if (div.classList.contains("show")) {
+                div.classList.remove("show");
+                video.pause(); // 暂停视频播放
+                button.innerHTML = "观看小姐姐";
+            } else {
+                div.classList.add("show");
+                video.play(); // 播放视频
+                button.innerHTML = "关闭小姐姐";
+            }
+        }
+
+        //刷视频
+        (function(window, document) {
+            if (top != self) {
+                window.top.location.replace(self.location.href);
+            }
+            var get = function(id) {
+                return document.getElementById(id);
+            }
+            var bind = function(element, event, callback) {
+                return element.addEventListener(event, callback);
+            }
+            var auto = true;
+            var player = get('player');
+            var randomm = function() {
+                player.src = 'https://v1.21lhz.cn/API/Video/api.php';
+                player.play();
+            }
+            bind(get('next'), 'click', randomm);
+            bind(player, 'error', function() {
+                randomm();
+            });
+            bind(get('switch'), 'click', function() {
+                auto = !auto;
+                this.innerText = '自动: ' + (auto ? '开' : '关');
+            });
+            bind(player, 'ended', function() {
+                if (auto) randomm();
+            });
+        })(window, document);
+    </script>
+    </footer>
+</body>
+</html>
